@@ -62,7 +62,7 @@ export let action: Action = async ({ context, request }) => {
 
   session.set(
     "current_user",
-    (context.session.current_user = user_id.toString())
+    user_id.toString()
   );
 
   return redirect("/");
